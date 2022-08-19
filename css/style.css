@@ -1,0 +1,157 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000;
+}
+
+.link-nav {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+}
+
+.link-nav:hover {
+  color: #2196f3;
+}
+
+.blue-text {
+  color: #2196f3;
+}
+
+.link-contact {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  color: #757575;
+}
+
+.link-contact:hover {
+  color: #2196f3;
+}
+
+.top-section {
+  color: #ffffff;
+  background: #2f303a;
+}
+
+.top-section-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
+
+.top-section-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 88;
+  cursor: pointer;
+  background: #2196f3;
+  border: none;
+  color: #ffffff;
+}
+
+.footer-color {
+  background: #2f303a;
+  color: #ffffff;
+}
+.footer-logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+}
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+}
+
+.footer-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 63;
+  color: #212121;
+  background: #f5f4fa;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-portfolio:hover {
+  color: #ffffff;
+  background: #2196f3;
+}
+
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: #212121;
+}
+
+.projects-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 88;
+  color: #757575;
+}
+
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  color: #212121;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 19;
+  color: #212121;
+}
+
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 19;
+}
+
+.title-description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  color: #212121;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+}
+
+.team-background {
+  background: #f5f4fa;
+}
