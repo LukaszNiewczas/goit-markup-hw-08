@@ -17,43 +17,41 @@
       href="https://github.com/sindresorhus/modern-normalize.git/modern-normalize.css"
     />
   </head>
-  <body>
-    <div class="container flex border-bottom-header">
-      <header>
-        <h3>
-          <a href="index.html" class="logo"
-            ><span class="blue-text">Web</span>Studio</a
-          >
-        </h3>
-      </header>
-      <nav>
-        <ul class="list">
-          <li>
-            <a href="index.html" class="link-nav">Agencja</a>
-          </li>
-          <li>
-            <a href="portfolio.html" class="link-nav">Portfolio</a>
-          </li>
-          <li>
-            <a href="index.html" class="link-nav">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="list">
+  <header class="header container">
+    <h3>
+      <a href="index.html" class="logo"
+        ><span class="blue-text">Web</span>Studio</a
+      >
+    </h3>
+    <nav>
+      <ul class="list-menu">
         <li>
-          <a href="emailto:info@devstudio.com" class="link-contact"
-            >info@devstudio.com</a
-          >
+          <a href="index.html" class="link-nav">Agencja</a>
         </li>
         <li>
-          <a href="tel:+45111111111" class="link-contact">+48111111111</a>
+          <a href="portfolio.html" class="link-nav">Portfolio</a>
+        </li>
+        <li>
+          <a href="index.html" class="link-nav">Kontakt</a>
         </li>
       </ul>
-    </div>
+    </nav>
+    <ul class="list-header-contact">
+      <li>
+        <a href="emailto:info@devstudio.com" class="link-contact"
+          >info@devstudio.com</a
+        >
+      </li>
+      <li>
+        <a href="tel:+45111111111" class="link-contact">+48111111111</a>
+      </li>
+    </ul>
+  </header>
+  <div class="border-bottom-header"></div>
     <main>
       <section>
         <div class="container">
-          <ul class="list">
+          <ul class="list filters">
             <li>
               <button type="button" class="btn-portfolio">Wszystkie</button>
             </li>
@@ -70,7 +68,7 @@
       </section>
       <section>
         <div class="container">
-          <ul class="list-images">
+          <ul class="list-images-portfolio">
             <li class="image-portfolio-border">
               <img
                 src="./images/image-por1.jpg"
@@ -101,12 +99,6 @@
               <h3 class="projects-title">Restauracja Seafood</h3>
               <p class="projects-subtitle">Aplikacja</p>
             </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <ul class="list-images">
             <li class="image-portfolio-border">
               <img
                 src="./images/image-por4.jpg"
@@ -137,12 +129,6 @@
               <h3 class="projects-title">Inspiration has no Borders</h3>
               <p class="projects-subtitle">Strona internetowa</p>
             </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <ul class="list-images">
             <li class="image-portfolio-border">
               <img
                 src="./images/image-por7.jpg"
@@ -178,23 +164,25 @@
       </section>
     </main>
     <footer class="footer-color">
-      <div class="container">
-        <a href="index.html" class="footer-logo"
-          ><span class="blue-text">Web</span>Studio</a
-        >
-        <address class="footer-address">
-          m. Warszawa, Aleje Jerozolimskie 21
-        </address>
-        <ul class="list-footer">
-          <li>
-            <a href="emailto:info@example.com" class="footer-contact"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+45111111111" class="footer-contact">+48111111111</a>
-          </li>
-        </ul>
+      <div class="container footer">
+        <div>
+          <a href="index.html" class="footer-logo"
+            ><span class="blue-text">Web</span>Studio</a
+          >
+          <address class="footer-address">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </address>
+          <ul class="list-footer">
+            <li>
+              <a href="emailto:info@example.com" class="footer-contact"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+45111111111" class="footer-contact">+48111111111</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

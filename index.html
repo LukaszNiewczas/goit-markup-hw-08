@@ -18,14 +18,12 @@
     />
   </head>
   <body>
-    <div class="container flex border-bottom-header">
-      <header>
-        <h3>
-          <a href="index.html" class="logo"
-            ><span class="blue-text">Web</span>Studio</a
-          >
-        </h3>
-      </header>
+    <header class="header container">
+      <h3>
+        <a href="index.html" class="logo"
+          ><span class="blue-text">Web</span>Studio</a
+        >
+      </h3>
       <nav>
         <ul class="list-menu">
           <li>
@@ -49,7 +47,8 @@
           <a href="tel:+45111111111" class="link-contact">+48111111111</a>
         </li>
       </ul>
-    </div>
+    </header>
+    <div class="border-bottom-header"></div>
     <main>
       <section class="top-section">
         <div class="container">
@@ -62,40 +61,44 @@
       </section>
       <section>
         <div class="container">
-          <ul class="list">
+          <ul class="list speciality">
             <li>
               <h3 class="title-description">LOREM IPSUM1</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit. Nam vel arcu sem. Sed <br />
+                non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
               <h3 class="title-description">LOREM IPSUM2</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit. Nam vel arcu sem. Sed <br />
+                non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
               <h3 class="title-description">LOREM IPSUM3</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit. Nam vel arcu sem. Sed <br />
+                non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
               <h3 class="title-description">LOREM IPSUM4</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit. Nam vel arcu sem. Sed <br />
+                non sodales dui. Interdum et malesuada
               </p>
             </li>
           </ul>
         </div>
       </section>
       <section>
-        <div class="container">
+        <div class="container block">
           <h2 class="title-section">Czym się zajmujemy</h2>
           <ul class="list-images">
             <li>
@@ -126,10 +129,10 @@
         </div>
       </section>
       <section class="team-background">
-        <div class="container">
+        <div class="container block">
           <h2 class="title-section">Nasz zespół</h2>
           <ul class="list-images">
-            <li class="border-shadow">
+            <li class="team-card">
               <img
                 src="./images/image1.jpg"
                 alt="John Doe"
@@ -139,7 +142,7 @@
               <h3 class="team-name">John Doe</h3>
               <p class="team-position">Product Designer</p>
             </li>
-            <li class="border-shadow">
+            <li class="team-card">
               <img
                 src="./images/image2.jpg"
                 alt="John Doe"
@@ -149,7 +152,7 @@
               <h3 class="team-name">John Doe</h3>
               <p class="team-position">Frontend Developer</p>
             </li>
-            <li class="border-shadow">
+            <li class="team-card">
               <img
                 src="./images/image3.jpg"
                 alt="John Doe"
@@ -159,7 +162,7 @@
               <h3 class="team-name">John Doe</h3>
               <p class="team-position">Marketing</p>
             </li>
-            <li class="border-shadow">
+            <li class="team-card">
               <img
                 src="./images/image4.jpg"
                 alt="John Doe"
@@ -174,23 +177,25 @@
       </section>
     </main>
     <footer class="footer-color">
-      <div class="container">
-        <a href="index.html" class="footer-logo"
-          ><span class="blue-text">Web</span>Studio</a
-        >
-        <address class="footer-address">
-          m. Warszawa, Aleje Jerozolimskie 21
-        </address>
-        <ul class="list-footer">
-          <li>
-            <a href="emailto:info@example.com" class="footer-contact"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+45111111111" class="footer-contact">+48111111111</a>
-          </li>
-        </ul>
+      <div class="container footer">
+        <div>
+          <a href="index.html" class="footer-logo"
+            ><span class="blue-text">Web</span>Studio</a
+          >
+          <address class="footer-address">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </address>
+          <ul class="list-footer">
+            <li>
+              <a href="emailto:info@example.com" class="footer-contact"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+45111111111" class="footer-contact">+48111111111</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
