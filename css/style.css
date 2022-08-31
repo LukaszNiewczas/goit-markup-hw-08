@@ -324,3 +324,12 @@ a {
 .item {
   flex-basis: calc((100% - 90px) / 3);
 }
+
+.pad-footer {
+  padding-left: 15px;
+}
+
+.pad {
+  padding-left: 15px;
+  padding-right: 15px;
+}
