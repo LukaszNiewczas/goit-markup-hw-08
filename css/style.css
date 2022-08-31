@@ -35,6 +35,7 @@ a {
   flex-direction: row;
   gap: 50px;
   margin-left: auto;
+  padding-right: 15px;
 }
 
 .list-menu {
@@ -93,6 +94,7 @@ a {
   font-size: 26px;
   line-height: 1.19;
   color: var(--black);
+  padding-left: 15px;
 }
 
 .link-nav {
