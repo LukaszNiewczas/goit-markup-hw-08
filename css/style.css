@@ -107,6 +107,21 @@ a {
   gap: 46px;
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.link-nav:active::after {
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  width: 58px;
+  height: 4px;
+  background-color: #2196f3;
+  top: 46px;
+}
+
+.link-nav:active {
+  color: #2196f3;
 }
 
 .link-nav:hover {
