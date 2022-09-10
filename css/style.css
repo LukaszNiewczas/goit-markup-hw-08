@@ -126,6 +126,7 @@ a {
 
 .link-nav:hover {
   color: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .blue-text {
@@ -144,6 +145,7 @@ a {
 .link-contact:hover {
   color: var(--blue);
   fill: var(--blue);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-section {
@@ -239,6 +241,9 @@ a {
 .btn-portfolio:focus {
   color: var(--white);
   background: var(--blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-title {
@@ -318,6 +323,7 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
@@ -389,6 +395,7 @@ a {
   background-color: #2196f3;
   fill: #ffffff;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-header {
@@ -410,6 +417,7 @@ a {
 
 .footer-icon:hover {
   background: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons {
@@ -462,4 +470,49 @@ a {
   fill: #2196f3;
   border-color: #2196f3;
   cursor: pointer;
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.label {
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  bottom: 0;
+  padding-top: 27px;
+  margin-bottom: 3px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 370px;
+  height: 294px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 49px 45px 49px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  transform: translateY(102%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.thumb:hover .overlay {
+  transform: translateY(0);
 }
