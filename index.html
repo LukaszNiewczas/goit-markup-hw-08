@@ -519,6 +519,31 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
+        <h6 class="modal-title">Zostaw swoje dane w formularzu poniżej</h6>
+        <form class="form-size">
+          <label class="modal-label"
+            >Imie<svg width="12" height="12" class="icon-label">
+              <use href="./images/icons.svg#name"></use>
+            </svg>
+            <input type="text" name="name" class="modal-input"
+          /></label>
+          <label class="modal-label"
+            >Telefon <input type="number" name="number" class="modal-input"
+          /></label>
+          <label class="modal-label"
+            >Email <input type="email" name="email" class="modal-input"
+          /></label>
+          <label class="modal-label"
+            >Komentarz
+            <textarea
+              name="coment"
+              placeholder="Wprowadź tekst"
+              class="modal-comment"
+            >
+            </textarea>
+          </label>
+          <button type="submit" class="btn-form">Wyślij</button>
+        </form>
       </div>
     </div>
 

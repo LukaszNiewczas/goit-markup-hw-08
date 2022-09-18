@@ -598,3 +598,75 @@ a {
 .footer-form-btn svg {
   fill: #fff;
 }
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1, 15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding: 40px 40px 0 40px;
+}
+
+.modal-input {
+  width: 448px;
+  height: 40px;
+  display: block;
+  margin: 4px 0 0 0;
+  border-radius: 4px;
+  border: rgba(33, 33, 33, 0.2) 1px solid;
+  padding: 0 0 0 30px;
+}
+
+.modal-input-text {
+  width: 448px;
+  height: 120px;
+  display: block;
+  margin: 4px 0 0 0;
+  border-radius: 4px;
+  border: rgba(33, 33, 33, 0.2) 1px solid;
+  padding: 0 0 0 30px;
+}
+
+.modal-label {
+  width: 448px;
+  height: 58px;
+  position: relative;
+}
+
+.form-size {
+  padding: 12px 40px 40px 40px;
+}
+
+.icon-label {
+  position: absolute;
+}
+
+.modal-comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.btn-form {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 30px 124px 43px 124px;
+}
