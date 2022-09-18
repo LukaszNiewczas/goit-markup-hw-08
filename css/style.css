@@ -589,7 +589,6 @@ a {
   align-items: center;
   text-align: center;
   padding-right: 24px;
-  position: absolute;
 }
 
 .footer-form {
@@ -597,5 +596,5 @@ a {
 }
 
 .footer-form-btn svg {
-  background-color: #ffffff;
+  fill: #fff;
 }
