@@ -127,6 +127,16 @@ a {
   top: 46px;
 }
 
+.active-page:after {
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  width: 58px;
+  height: 4px;
+  background-color: #2196f3;
+  top: 46px;
+}
+
 .link-nav:hover {
   color: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
