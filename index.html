@@ -41,7 +41,7 @@
         <li>
           <a href="emailto:info@devstudio.com" class="link-contact">
             <svg class="contact-icon" width="16" height="12">
-              <use href="./images/icons.svg#email-logo"></use>
+              <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a
           >
@@ -49,7 +49,7 @@
         <li>
           <a href="tel:+48111111111" class="link-contact">
             <svg class="contact-icon" width="10" height="16">
-              <use href="./images/icons.svg#phone"></use>
+              <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +48111111111
           </a>
@@ -76,7 +76,7 @@
               <li class="item">
                 <div class="icon-description">
                   <svg width="70" height="70">
-                    <use href="./images/icons.svg#satelite"></use>
+                    <use href="./images/icons.svg#icon-antenna-1"></use>
                   </svg>
                 </div>
                 <h3 class="title-description">LOREM IPSUM1</h3>
@@ -89,7 +89,7 @@
               <li class="item">
                 <div class="icon-description">
                   <svg width="70" height="70">
-                    <use href="./images/icons.svg#clock"></use>
+                    <use href="./images/icons.svg#icon-clock-1"></use>
                   </svg>
                 </div>
                 <h3 class="title-description">LOREM IPSUM2</h3>
@@ -102,7 +102,7 @@
               <li class="item">
                 <div class="icon-description">
                   <svg width="70" height="70">
-                    <use href="./images/icons.svg#diagram"></use>
+                    <use href="./images/icons.svg#icon-diagram-1"></use>
                   </svg>
                 </div>
                 <h3 class="title-description">LOREM IPSUM3</h3>
@@ -115,7 +115,7 @@
               <li class="item">
                 <div class="icon-description">
                   <svg width="70" height="70">
-                    <use href="./images/icons.svg#astronaut"></use>
+                    <use href="./images/icons.svg#icon-astronaut-1"></use>
                   </svg>
                 </div>
                 <h3 class="title-description">LOREM IPSUM4</h3>
@@ -369,7 +369,7 @@
             <li>
               <svg class="our-client-logo">
                 <use
-                  href="./images/icons.svg#logo-company-1"
+                  href="./images/icons.svg#icon-company-1"
                   width="106"
                   height="60"
                   x="32"
@@ -380,7 +380,7 @@
             <li>
               <svg class="our-client-logo">
                 <use
-                  href="./images/icons.svg#logo-company-2"
+                  href="./images/icons.svg#icon-company-2"
                   width="106"
                   height="60"
                   x="32"
@@ -391,7 +391,7 @@
             <li>
               <svg class="our-client-logo">
                 <use
-                  href="./images/icons.svg#logo-company-3"
+                  href="./images/icons.svg#icon-company-3"
                   width="106"
                   height="60"
                   x="32"
@@ -402,7 +402,7 @@
             <li>
               <svg class="our-client-logo">
                 <use
-                  href="./images/icons.svg#logo-company-4"
+                  href="./images/icons.svg#icon-company-4"
                   width="106"
                   height="60"
                   x="32"
@@ -413,7 +413,7 @@
             <li>
               <svg class="our-client-logo">
                 <use
-                  href="./images/icons.svg#logo-company-5"
+                  href="./images/icons.svg#icon-company-5"
                   width="106"
                   height="60"
                   x="32"
@@ -424,7 +424,7 @@
             <li>
               <svg class="our-client-logo">
                 <use
-                  href="./images/icons.svg#logo-company-6"
+                  href="./images/icons.svg#icon-company-6"
                   width="106"
                   height="60"
                   x="32"
@@ -508,7 +508,13 @@
             />
             <button type="submit" class="footer-form-btn">
               Zapisz się<svg width="24" height="24">
-                <use href="./images/icons.svg#icon-paper-plane"></use>
+                <use
+                  href="./images/icons.svg#icon-send"
+                  width="20"
+                  height="22"
+                  x="4"
+                  y="3"
+                ></use>
               </svg>
             </button>
           </form>
@@ -518,29 +524,71 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+        <button type="button" class="close-btn" data-modal-close>
+          <svg>
+            <use
+              href="./images/icons.svg#icon-X"
+              width="11"
+              height="11"
+              x="8"
+              y="8"
+            ></use>
+          </svg>
+        </button>
         <h6 class="modal-title">Zostaw swoje dane w formularzu poniżej</h6>
         <form class="form-size">
-          <label class="modal-label"
-            >Imie<svg width="12" height="12" class="icon-label">
-              <use href="./images/icons.svg#name"></use>
+          <label class="modal-label">
+            <p>Imie</p>
+            <svg class="icon-label">
+              <use
+                href="./images/icons.svg#icon-user"
+                width="12"
+                height="12"
+                x="14"
+                y="20"
+              ></use>
             </svg>
             <input type="text" name="name" class="modal-input"
           /></label>
-          <label class="modal-label"
-            >Telefon <input type="number" name="number" class="modal-input"
+          <label class="modal-label">
+            <p>Telefon</p>
+            <svg class="icon-label">
+              <use
+                href="./images/icons.svg#icon-phone"
+                width="13"
+                height="13"
+                x="14"
+                y="20"
+              ></use>
+            </svg>
+            <input type="number" name="number" class="modal-input"
+          /></label>
+          <label class="modal-label">
+            <p>Email</p>
+            <svg class="icon-label">
+              <use
+                href="./images/icons.svg#icon-envelope-fill"
+                width="15"
+                height="12"
+                x="14"
+                y="20"
+              ></use>
+            </svg>
+            <input type="email" name="email" class="modal-input"
           /></label>
           <label class="modal-label"
-            >Email <input type="email" name="email" class="modal-input"
-          /></label>
-          <label class="modal-label"
-            >Komentarz
+            ><p>Komentarz</p>
             <textarea
-              name="coment"
+              name="comment"
               placeholder="Wprowadź tekst"
               class="modal-comment"
-            >
-            </textarea>
+            ></textarea>
+          </label>
+          <label class="modal-label">
+            <input type="checkbox" class="checkbox" />
+            Oświadczam iż akceptuję
+            <span class="blue-text-underline">Regulamin</span> i
+            <span class="blue-text-underline">Politykę Prywatności.</span>
           </label>
           <button type="submit" class="btn-form">Wyślij</button>
         </form>
