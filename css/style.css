@@ -530,14 +530,8 @@ a {
   left: 0;
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .modal {
-  position: absolute;
+  position: fixed;
   width: 528px;
   height: 581px;
   top: 50%;
@@ -546,7 +540,22 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition-property: visibility, opacity, transform;
+  transition-duration: 3s;
+  transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg)
+    skew(0deg, 0deg);
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+    skew(40deg, 40deg);
 }
 
 .close-btn {
@@ -629,14 +638,20 @@ a {
   height: 58px;
   position: relative;
   font-size: 12px;
+  position: relative;
 }
 
 .modal-label:focus-within svg {
   fill: #2196f3;
 }
 
+.modal-label:focus-within input {
+  outline: 1px solid #2196f3;
+}
+
 .form-size {
   padding: 12px 40px 40px 40px;
+  position: relative;
 }
 
 .icon-label {
@@ -651,6 +666,10 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
+}
+
+.modal-comment:focus-within {
+  outline: 1px solid #2196f3;
 }
 
 .btn-form {
@@ -674,13 +693,14 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
   color: #757575;
+  padding-left: 20px;
 }
 
 .blue-text-underline {
   color: #2196f3;
   text-decoration: underline;
+  cursor: pointer;
 }
 .checkbox {
   font-weight: 400;
@@ -688,4 +708,27 @@ a {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin-left: 50px;
+  position: relative;
+}
+
+.accept::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+input {
+  appearance: none;
+}
+
+input:checked + .accept::before {
+  border: none;
+  background-image: url("/images/icons.svg#icon-checked");
 }
