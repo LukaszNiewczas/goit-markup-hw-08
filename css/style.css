@@ -717,11 +717,12 @@ a {
   content: "";
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 1px solid #212121;
   border-radius: 3px;
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
+  top: 375px;
 }
 
 input {
@@ -730,5 +731,5 @@ input {
 
 input:checked + .accept::before {
   border: none;
-  background-image: url("/images/icons.svg#icon-checked");
+  background-image: url(https://raw.githubusercontent.com/LukaszNiewczas/goit-markup-hw-07/95cfde59ce67aeb77680fba7dffbbb05a9581571/images/icon%20check.svg);
 }
