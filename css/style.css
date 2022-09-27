@@ -589,8 +589,6 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
@@ -601,6 +599,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
   padding-right: 24px;
 }
 
@@ -609,6 +608,7 @@ a {
 }
 
 .footer-form-btn svg {
+  position: absolute;
   fill: #fff;
 }
 
