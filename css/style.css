@@ -543,8 +543,7 @@ a {
   z-index: 1;
   transition-property: visibility, opacity, transform;
   transition-duration: 3s;
-  transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg)
-    skew(0deg, 0deg);
+  transform: translateX(-50%) translateY(-50%) scale(1);
   opacity: 1;
   visibility: visible;
   display: block;
@@ -554,8 +553,7 @@ a {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
-    skew(40deg, 40deg);
+  transform: translateX(-50%) translateY(-50%) scale(0);
 }
 
 .close-btn {
