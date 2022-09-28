@@ -25,12 +25,7 @@ a {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-}
-
-.list-header-contact {
+.header__list-contact {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -39,14 +34,14 @@ a {
   padding-right: 15px;
 }
 
-.list-header-contact:hover a,
-.list-header-contact:hover svg {
+.header__link-contact:hover,
+.header__link-contact:hover svg {
   color: #2196f3;
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-menu {
+.header__list-menu {
   display: flex;
   list-style: none;
   flex-direction: row;
@@ -56,7 +51,7 @@ a {
   gap: 46px;
 }
 
-.list-images {
+.servises__list-images {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -66,7 +61,17 @@ a {
   flex-wrap: wrap;
 }
 
-.list-images-portfolio {
+.team__list-images {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolio__list {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -78,7 +83,7 @@ a {
   margin-bottom: 94px;
 }
 
-.team-card {
+.team__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -90,7 +95,7 @@ a {
   background-color: var(--white);
 }
 
-.list-footer {
+.footer__list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -98,7 +103,7 @@ a {
   margin: 9px 0;
 }
 
-.logo {
+.header__logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -106,7 +111,7 @@ a {
   padding-left: 15px;
 }
 
-.link-nav {
+.header__link-nav {
   color: var(--second-gray);
   font-weight: 500;
   font-size: 14px;
@@ -117,7 +122,7 @@ a {
   position: relative;
 }
 
-.link-nav:hover::after {
+.header__link-nav:hover::after {
   position: absolute;
   content: "";
   border-radius: 2px;
@@ -127,7 +132,7 @@ a {
   top: 46px;
 }
 
-.active-page:after {
+.header__active-page:after {
   position: absolute;
   content: "";
   border-radius: 2px;
@@ -137,16 +142,20 @@ a {
   top: 46px;
 }
 
-.link-nav:hover {
+.header__link-nav:hover {
   color: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.blue-text {
+.header__blue-text {
   color: var(--blue);
 }
 
-.link-contact {
+.footer__blue-text {
+  color: var(--blue);
+}
+
+.header__link-contact {
   list-style-type: none;
   font-weight: 500;
   font-size: 14px;
@@ -165,14 +174,14 @@ a {
   height: 600px;
 }
 
-.background-image {
+.top-section__background-image {
   background: rgba(47, 48, 58, 0.4);
   background-image: url(https://raw.githubusercontent.com/LukaszNiewczas/goit-markup-hw-04/main/images/backgruond-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.top-section-text {
+.top-section__main-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -180,7 +189,7 @@ a {
   padding-top: 195px;
 }
 
-.top-section-btn {
+.top-section__main-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1, 88;
@@ -202,33 +211,33 @@ a {
   padding: 60px 0;
 }
 
-.footer-color {
+.footer__color {
   background: var(--background-color);
   color: var(--white);
   width: 100%;
   height: 252px;
 }
-.footer-logo {
+.footer__logo {
   color: var(--white);
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
 }
-.footer-address {
+.footer__address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
   margin: 20px 0 0 0;
 }
 
-.footer-contact {
+.footer__contact {
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
   color: var(--footer-contact-color);
 }
 
-.btn-portfolio {
+.filters__btn-portfolio {
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 63;
@@ -244,8 +253,8 @@ a {
   justify-content: center;
 }
 
-.btn-portfolio:hover,
-.btn-portfolio:focus {
+.filters__btn-portfolio:hover,
+.filters__btn-portfolio:focus {
   color: var(--white);
   background: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -253,7 +262,7 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-title {
+.portfolio__projects-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -261,7 +270,7 @@ a {
   margin: 20px 24px 4px 24px;
 }
 
-.projects-subtitle {
+.portfolio__projects-subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 88;
@@ -269,7 +278,7 @@ a {
   margin: 0 24px 20px 24px;
 }
 
-.title-section {
+.clients__title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1, 17;
@@ -277,7 +286,23 @@ a {
   text-align: center;
 }
 
-.team-name {
+.servises__title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  color: var(--second-gray);
+  text-align: center;
+}
+
+.team__title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  color: var(--second-gray);
+  text-align: center;
+}
+
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 19;
@@ -285,32 +310,28 @@ a {
   margin: 30px 0 10px 0;
 }
 
-.team-position {
+.team__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 19;
   margin: 0 0 30px 0;
 }
 
-.title-description {
+.speciality__title-description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 14;
   color: var(--second-gray);
 }
 
-.description {
+.speciality__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
 }
 
-.team-background {
+.team__background {
   background: var(--background-team-section);
-}
-
-.flex {
-  display: flex;
 }
 
 .border-bottom-header {
@@ -322,11 +343,11 @@ a {
   margin: auto;
 }
 
-.image-portfolio-card {
+.portfolio__image-card {
   border: 1px solid #eeeeee;
 }
 
-.image-portfolio-card:hover {
+.portfolio__image-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -342,7 +363,23 @@ a {
   justify-content: center;
 }
 
-.block {
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 94px 0;
+  gap: 50px;
+}
+.servises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 94px 0;
+  gap: 50px;
+}
+.team {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,7 +388,7 @@ a {
   gap: 50px;
 }
 
-.speciality {
+.speciality__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,6 +396,7 @@ a {
   gap: 30px;
   padding: 94px 0 0 0;
   justify-content: center;
+  list-style: none;
 }
 
 .filters {
@@ -366,46 +404,43 @@ a {
   justify-content: center;
   gap: 8px;
   margin: 94px 0 0 0;
+  list-style: none;
 }
 
-.item {
+.speciality__item {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.pad-footer {
-  padding-left: 15px;
-}
-
-.pad {
+.speciality {
   padding-left: 15px;
   padding-right: 15px;
 }
-.pad-footer {
+.footer__pad {
   padding-left: 15px;
   padding-right: 70px;
 }
 
-.team-icons {
+.team__icons {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
 }
 
-.team-icon {
+.team__icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
 }
 
-.team-icon:hover {
+.team__icon:hover {
   background-color: #2196f3;
   fill: #ffffff;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-header {
+.footer__header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 14;
@@ -414,7 +449,7 @@ a {
   margin: 10px 0 20px 0;
 }
 
-.footer-icon {
+.footer__icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -422,27 +457,23 @@ a {
   fill: #ffffff;
 }
 
-.footer-icon:hover {
+.footer__icon:hover {
   background: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icons {
+.footer__icons {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
 }
 
-.our-client-list {
-  list-style: none;
-}
-
-.contact-icon {
+.header__contact-icon {
   margin: 0 10px 0 0;
   fill: #757575;
 }
 
-.icon-description {
+.speciality__icon-description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,15 +485,16 @@ a {
   background-color: #f5f4fa;
 }
 
-.our-client-list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 30px;
+  list-style: none;
 }
 
-.our-client-logo {
+.clients__logo {
   border-radius: 4px;
   border: #afb1b8 solid 1px;
   width: 170px;
@@ -470,18 +502,23 @@ a {
   fill: #afb1b8;
 }
 
-.our-client-logo:hover {
+.clients__logo:hover {
   fill: #2196f3;
   border-color: #2196f3;
   cursor: pointer;
 }
 
-.thumb {
+.servises__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.label {
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.servises__label {
   background: rgba(47, 48, 58, 0.8);
   width: 370px;
   height: 70px;
@@ -499,7 +536,7 @@ a {
   margin-bottom: 3px;
 }
 
-.overlay {
+.portfolio__overlay {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   width: 370px;
@@ -517,7 +554,7 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.thumb:hover .overlay {
+.portfolio__thumb:hover .portfolio__overlay {
   transform: translateY(0);
 }
 
@@ -556,7 +593,7 @@ a {
   transform: translateX(-50%) translateY(-50%) scale(0);
 }
 
-.close-btn {
+.modal__close-btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -568,7 +605,7 @@ a {
   cursor: pointer;
 }
 
-.email-footer {
+.footer__email {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -579,9 +616,11 @@ a {
   line-height: 1, 25;
   padding-left: 16px;
   background-color: #2f303a;
+  outline: none;
+  color: #ffffff;
 }
 
-.footer-form-btn {
+.footer__form-btn {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -599,18 +638,19 @@ a {
   text-align: center;
   position: relative;
   padding-right: 24px;
+  cursor: pointer;
 }
 
-.footer-form {
+.footer__form {
   margin-left: 78px;
 }
 
-.footer-form-btn svg {
+.footer__form-btn svg {
   position: absolute;
   fill: #fff;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1, 15;
@@ -620,7 +660,7 @@ a {
   padding: 40px 40px 0 40px;
 }
 
-.modal-input {
+.modal__input {
   width: 448px;
   height: 40px;
   display: block;
@@ -631,7 +671,7 @@ a {
   margin-bottom: 10px;
 }
 
-.modal-label {
+.modal__label {
   width: 448px;
   height: 58px;
   position: relative;
@@ -639,24 +679,24 @@ a {
   position: relative;
 }
 
-.modal-label:focus-within svg {
+.modal__label:focus-within svg {
   fill: #2196f3;
 }
 
-.modal-label:focus-within input {
+.modal__label:focus-within input {
   outline: 1px solid #2196f3;
 }
 
-.form-size {
+.modal__form-size {
   padding: 12px 40px 40px 40px;
   position: relative;
 }
 
-.icon-label {
+.modal__icon {
   position: absolute;
 }
 
-.modal-comment {
+.modal__comment {
   resize: none;
   width: 448px;
   height: 120px;
@@ -666,11 +706,11 @@ a {
   margin-bottom: 20px;
 }
 
-.modal-comment:focus-within {
+.modal__comment:focus-within {
   outline: 1px solid #2196f3;
 }
 
-.btn-form {
+.modal__btn-form {
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -685,9 +725,10 @@ a {
   letter-spacing: 0.06em;
   color: #ffffff;
   margin: 30px 124px 43px 124px;
+  cursor: pointer;
 }
 
-.accept {
+.modal__accept {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -695,21 +736,13 @@ a {
   padding-left: 20px;
 }
 
-.blue-text-underline {
+.modal__blue-text-underline {
   color: #2196f3;
   text-decoration: underline;
   cursor: pointer;
 }
-.checkbox {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  margin-left: 50px;
-  position: relative;
-}
 
-.accept::before {
+.modal__accept::before {
   display: block;
   position: absolute;
   content: "";
@@ -727,7 +760,7 @@ input {
   appearance: none;
 }
 
-input:checked + .accept::before {
+input:checked + .modal__accept::before {
   border: none;
   background-image: url(https://raw.githubusercontent.com/LukaszNiewczas/goit-markup-hw-07/95cfde59ce67aeb77680fba7dffbbb05a9581571/images/icon%20check.svg);
 }
