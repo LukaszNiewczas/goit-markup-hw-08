@@ -1,0 +1,39 @@
+.speciality {
+  padding-left: 15px;
+  padding-right: 15px;
+  &__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  &__icon-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 270px;
+    background-color: #f5f4fa;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 94px 0 0 0;
+    justify-content: center;
+    list-style: none;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+  }
+  &__title-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    color: var(--second-gray);
+  }
+}

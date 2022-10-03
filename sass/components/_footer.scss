@@ -1,0 +1,111 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0;
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin: 9px 0;
+  }
+  &__blue-text {
+    color: var(--blue);
+  }
+  &__color {
+    background: var(--background-color);
+    color: var(--white);
+    width: 100%;
+    height: 252px;
+  }
+  &__logo {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 19;
+  }
+  &__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    margin: 20px 0 0 0;
+  }
+  &__contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    color: var(--footer-contact-color);
+  }
+  &__pad {
+    padding-left: 15px;
+    padding-right: 70px;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 10px 0 20px 0;
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    fill: #ffffff;
+    &:hover {
+      background: #2196f3;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  &__email {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 25;
+    padding-left: 16px;
+    background-color: #2f303a;
+    outline: none;
+    color: #ffffff;
+  }
+  &__form-btn {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-right: 24px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    & svg {
+      position: absolute;
+      fill: #fff;
+    }
+  }
+  &__form {
+    margin-left: 78px;
+  }
+}
