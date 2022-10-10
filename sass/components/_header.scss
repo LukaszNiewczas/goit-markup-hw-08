@@ -5,10 +5,9 @@
   padding: 24px 0 25px 0;
   align-items: center;
   justify-content: center;
-
   &__list-contact {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 50px;
     margin-left: auto;
@@ -21,7 +20,7 @@
     }
   }
   &__list-menu {
-    display: flex;
+    display: none;
     list-style: none;
     flex-direction: row;
     font-weight: 500;
@@ -91,6 +90,29 @@
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    max-height: 80px;
+    &__list-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    &__list-menu {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__list-contact {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+}
 // .header {
 //   display: flex;
 //   flex-direction: row;
