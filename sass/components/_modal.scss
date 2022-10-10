@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   background: #ffffff;
@@ -15,7 +15,6 @@
   opacity: 1;
   visibility: visible;
   display: block;
-
   &__close-btn {
     position: absolute;
     width: 30px;
@@ -37,7 +36,7 @@
     padding: 40px 40px 0 40px;
   }
   &__input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     display: block;
     margin: 4px 0 0 0;
@@ -65,11 +64,10 @@
   }
   &__icon {
     position: absolute;
-    
   }
   &__comment {
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -93,7 +91,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
-    margin: 30px 124px 43px 124px;
+    margin: 30px 120px 40px 90px;
     cursor: pointer;
     &:hover {
       opacity: 0.8;
@@ -101,7 +99,7 @@
   }
   &__accept {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     color: #757575;
     padding-left: 20px;
@@ -150,3 +148,165 @@ input:checked + .modal__accept::before {
   opacity: 0;
   transform: translateX(-50%) translateY(-50%) scale(0);
 }
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    &__btn-form {
+      margin: 30px 120px 40px 120px;
+    }
+  }
+}
+
+// .modal {
+//   position: fixed;
+//   width: 450px;
+//   height: 609px;
+//   top: 50%;
+//   left: 50%;
+//   background: #ffffff;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+//   z-index: 1;
+//   transition-property: visibility, opacity, transform;
+//   transition-duration: 3s;
+//   transform: translateX(-50%) translateY(-50%) scale(1);
+//   opacity: 1;
+//   visibility: visible;
+//   display: block;
+
+//   &__close-btn {
+//     position: absolute;
+//     width: 30px;
+//     height: 30px;
+//     top: 8px;
+//     right: 8px;
+//     background: #ffffff;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     border-radius: 50%;
+//     cursor: pointer;
+//   }
+//   &__title {
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 1, 15;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: #212121;
+//     padding: 40px 40px 0 40px;
+//   }
+//   &__input {
+//     width: 100%;
+//     height: 40px;
+//     display: block;
+//     margin: 4px 0 0 0;
+//     border-radius: 4px;
+//     border: rgba(33, 33, 33, 0.2) 1px solid;
+//     padding: 0 0 0 30px;
+//     margin-bottom: 10px;
+//   }
+//   &__label {
+//     width: 448px;
+//     height: 58px;
+//     position: relative;
+//     font-size: 12px;
+//     position: relative;
+//     &:focus-within input {
+//       outline: 1px solid #2196f3;
+//     }
+//     &:focus-within svg {
+//       fill: #2196f3;
+//     }
+//   }
+//   &__form-size {
+//     padding: 12px 40px 40px 40px;
+//     position: relative;
+//   }
+//   &__icon {
+//     position: absolute;
+//   }
+//   &__comment {
+//     resize: none;
+//     width: 100%;
+//     height: 120px;
+//     padding: 12px 16px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     margin-bottom: 20px;
+//     &:focus-within {
+//       outline: 1px solid #2196f3;
+//     }
+//   }
+//   &__btn-form {
+//     width: 200px;
+//     height: 50px;
+//     background: #2196f3;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border: none;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 30px;
+//     align-items: center;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     color: #ffffff;
+//     margin: 30px 120px 40px 90px;
+//     cursor: pointer;
+//     &:hover {
+//       opacity: 0.8;
+//     }
+//   }
+//   &__accept {
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 24px;
+//     color: #757575;
+//     padding-left: 20px;
+//     &::before {
+//       display: block;
+//       position: absolute;
+//       content: "";
+//       width: 16px;
+//       height: 15px;
+//       border: 1px solid #212121;
+//       border-radius: 3px;
+//       background-repeat: no-repeat;
+//       background-size: auto 100%;
+//       background-position: center;
+//       top: 375px;
+//     }
+//   }
+//   &__blue-text-underline {
+//     color: #2196f3;
+//     text-decoration: underline;
+//     cursor: pointer;
+//   }
+// }
+
+// input {
+//   appearance: none;
+// }
+
+// input:checked + .modal__accept::before {
+//   border: none;
+//   background-image: url(https://raw.githubusercontent.com/LukaszNiewczas/goit-markup-hw-07/95cfde59ce67aeb77680fba7dffbbb05a9581571/images/icon%20check.svg);
+// }
+
+// .backdrop {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   top: 0;
+//   left: 0;
+// }
+
+// .is-hidden {
+//   pointer-events: none;
+//   visibility: hidden;
+//   opacity: 0;
+//   transform: translateX(-50%) translateY(-50%) scale(0);
+// }
