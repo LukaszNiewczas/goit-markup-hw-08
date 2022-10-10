@@ -261,7 +261,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .top-section__background-image {
-    background-image: url(https://raw.githubusercontent.com/LukaszNiewczas/goit-markup-hw-04/main/images/backgruond-image.jpg);
+    background-image: url(https://raw.githubusercontent.com/LukaszNiewczas/goit-markup-hw-08/main/images/backgruond-image%402x.jpg);
   }
 }
 .speciality {
